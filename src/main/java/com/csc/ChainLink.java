@@ -1,6 +1,6 @@
 package com.csc;
 
-class ChainLink {
+public class ChainLink {
     public String color;
 
     ChainLink(String color) {

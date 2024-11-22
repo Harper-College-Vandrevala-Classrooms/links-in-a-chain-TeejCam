@@ -4,19 +4,6 @@ public class SinglyLinkedList
 {
     Node head;
 
-    static class Node
-    {
-        //ChainLink data = new ChainLink();
-        ChainLink data;
-        Node next;
-
-        Node(ChainLink data)
-        {
-            this.data = data;
-            this.next = null;
-        }
-    }
-
     SinglyLinkedList()
     {
         this.head = null;
@@ -28,13 +15,24 @@ public class SinglyLinkedList
         Node node1 = new Node(linkOne);
         this.head = node1;
 
-        ChainLink linkTwo = ChainLink("blue");
+        ChainLink linkTwo = new ChainLink("blue");
         Node node2 = new Node(linkTwo);
         node1.next = node2;
 
-        ChainLink linkThree = ChainLink("green");
+        ChainLink linkThree = new ChainLink("green");
         Node node3 = new Node(linkThree);
         node2.next = node3;
+    }
+
+    public Node next()
+    {
+        Node current = this.head;
+        if(current == null){
+            return null;
+        } else {
+            return current.next;
+        }
+
     }
 
     public void append(Node newNode)

@@ -5,6 +5,8 @@ public class SinglyLinkedListDriver
     public static void main(String[] args)
     {
         SinglyLinkedList list1 = new SinglyLinkedList();
+        list1.createSinglyLinkedList();
+
         ChainLink link1 = new ChainLink("purple");
         Node node1 = new Node(link1);
 
@@ -14,5 +16,6 @@ public class SinglyLinkedListDriver
         list1.append(node1);
         list1.displaySinglyLinkedList();
 
+        //Node retrievedNode = node1.next();
     }
 }
