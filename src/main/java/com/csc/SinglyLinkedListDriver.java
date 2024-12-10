@@ -16,6 +16,11 @@ public class SinglyLinkedListDriver
         list1.append(node1);
         list1.displaySinglyLinkedList();
 
-        //Node retrievedNode = node1.next();
+        GenericLinkedList<String> list2 = new GenericLinkedList<>();
+        list2.append(new GenericNode<>("red"));
+        list2.append(new GenericNode<>("blue"));
+        list2.append(new GenericNode<>("green"));
+
+        list2.displayLinkedList();
     }
 }
