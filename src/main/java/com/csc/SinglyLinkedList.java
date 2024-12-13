@@ -49,6 +49,12 @@ public class SinglyLinkedList
         }
     }
 
+    public void prepend(Node newNode)
+    {
+        newNode.next = this.head;
+        this.head = newNode;
+    }
+
     public void displaySinglyLinkedList()
     {
         Node current = this.head;
